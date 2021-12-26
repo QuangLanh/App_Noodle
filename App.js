@@ -8,7 +8,7 @@ import Info from './src/screens/Info';
 import Done from './src/screens/Done';
 import Outof from './src/screens/Outof';
 import ErrorScreen from './src/screens/ErrorScreen.js';
-import ErrorScreens from './src/screens/ErrorScreens.js';
+
 
 const Stack = createNativeStackNavigator();
 export default function App() {
