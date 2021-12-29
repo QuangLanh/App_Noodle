@@ -60,6 +60,7 @@ const Outof = ({ navigation }) => {
       text_Outof: {
         alignSelf: 'center',
         fontSize: 30,
+        fontWeight:'900',
         marginTop: 10,
         color: '#C71A1A',
       },
