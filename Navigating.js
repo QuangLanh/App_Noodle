@@ -1,27 +1,29 @@
-import * as React from 'react';
-import {View, Text} from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import HomeScreen from './presentations/HomeScreen';
-import InformationScreen from './presentations/InformationScreen';
-import DoneScreen from './presentations/DoneScreen';
-import OutofScreen from './presentations/OutofScreen';
-import ErrorScreen from './presentations/ErrorScreen';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+
+import Welcome from './src/screens/Welcome';
+import Info from './src/screens/Info';
+import Done from './src/screens/Done';
+import Outof from './src/screens/Outof';
+import ErrorScreen from './src/screens/ErrorScreen.js';
 const Stack = createNativeStackNavigator();
 
 function Navigating() {
   return (
-    // <NavigationContainer>
-      <Stack.Navigator
-        initialRouteName="HomeScreen"
-        screenOptions={{headerShown: false}}>
-        <Stack.Screen name="HomeScreen" component={HomeScreen} />
-        <Stack.Screen name="InformationScreen" component={InformationScreen} />
-        <Stack.Screen name="DoneScreen" component={DoneScreen} />
-        <Stack.Screen name="ErrorScreen" component={ErrorScreen} />
-        <Stack.Screen name="OutofScreen" component={OutofScreen} />
+
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen component={Welcome} name='Welcome' />
+        <Stack.Screen component={Info} name='Info' />
+        <Stack.Screen component={Done} name='Done' />
+        <Stack.Screen component={Outof} name='Outof' />
+        <Stack.Screen component={ErrorScreen} name='ErrorScreen' />
       </Stack.Navigator>
-    // </NavigationContainer>
+    </NavigationContainer>
+   
   );
 }
 

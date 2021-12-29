@@ -9,7 +9,6 @@ import Done from './src/screens/Done';
 import Outof from './src/screens/Outof';
 import ErrorScreen from './src/screens/ErrorScreen.js';
 
-
 const Stack = createNativeStackNavigator();
 export default function App() {
   return (
