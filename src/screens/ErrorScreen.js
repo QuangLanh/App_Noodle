@@ -37,7 +37,13 @@ const error = ({navigation}) => {
               style={styles.checkQR}
               source={require('../../images/checkQR.jpg')}
             />
-            <Image style={styles.next} source={require('../../images/next.png')} />
+            <TouchableOpacity
+              onPress={() => navigation.navigate('Welcome')}>
+              <Image
+                style={styles.next}
+                source={require('../../images/next.png')}
+              />
+            </TouchableOpacity>
           </View>
         </View>
       </ImageBackground>
