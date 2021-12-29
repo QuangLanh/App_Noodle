@@ -62,7 +62,6 @@ const Outof = ({ navigation }) => {
         fontSize: 30,
         marginTop: 10,
         color: '#C71A1A',
-        fontFamily: 'SVN-Nexa Rust Slab Black Shadow',
       },
       text_content: {
         color: '#C71A1A',

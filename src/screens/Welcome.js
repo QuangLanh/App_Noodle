@@ -71,7 +71,6 @@ const styles = StyleSheet.create({
     marginBottom:15,
     fontSize: 40,
     fontWeight:'900',
-    fontFamily: 'SVN-Nexa Rust Slab Black Shadow',
     color: '#C71A1A',
   },
   image1: {

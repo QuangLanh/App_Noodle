@@ -133,7 +133,6 @@ const styles = StyleSheet.create({
         fontWeight:'900',
         fontSize: 30,
         marginTop: 20,
-        fontFamily: 'SVN-Nexa Rust Slab Black Shadow',
         color: '#C71A1A',
     },
     card: {
