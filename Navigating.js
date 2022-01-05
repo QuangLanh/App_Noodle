@@ -15,7 +15,9 @@ function Navigating() {
   return (
 
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator
+        screenOptions={{
+        headerShown: false}}>
         <Stack.Screen component={Welcome} name='Welcome' />
         <Stack.Screen component={Info} name='Info' />
         <Stack.Screen component={Done} name='Done' />
