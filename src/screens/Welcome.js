@@ -29,10 +29,13 @@ const Welcome = ({navigation}) => {
           </View>
           <View
             style={{flexDirection: 'row', alignSelf: 'center', marginTop: 50}}>
+              <TouchableOpacity
+              onPress={() => navigation.navigate('ErrorScreen')}>
             <Image
               style={styles.image3}
               source={require('../../images/checkQR.jpg')}
             />
+            </TouchableOpacity>
             <TouchableOpacity
               onPress={() => navigation.navigate('Info')}>
               <Image
