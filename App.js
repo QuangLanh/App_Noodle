@@ -1,30 +1,26 @@
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Welcome from './src/screens/Welcome';
-import Info from './src/screens/Info';
-import Done from './src/screens/Done';
-import Outof from './src/screens/Outof';
-import ErrorScreen from './src/screens/ErrorScreen.js';
-
+import Login from "./src/screens/Login";
+import Register from "./src/screens/Register";
+import Categories from "./src/screens/Categories";
+import Payment from "./src/screens/Payment";
 const Stack = createNativeStackNavigator();
 export default function App() {
   return (
-
     <NavigationContainer>
-      <Stack.Navigator 
-          screenOptions={{
-          headerShown: false}}>
-        <Stack.Screen component={Welcome} name='Welcome' />
-        <Stack.Screen component={Info} name='Info' />
-        <Stack.Screen component={Done} name='Done' />
-        <Stack.Screen component={Outof} name='Outof' />
-        <Stack.Screen component={ErrorScreen} name='ErrorScreen' />
+      <Stack.Navigator
+        screenOptions={{
+          headerShown: false,
+        }}
+      >
+        <Stack.Screen component={Login} name="Login" />
+        <Stack.Screen component={Register} name="Register" />
+        <Stack.Screen component={Categories} name="Categories" />
+        <Stack.Screen component={Payment} name="Payment" />
       </Stack.Navigator>
     </NavigationContainer>
-   
   );
 }
-
