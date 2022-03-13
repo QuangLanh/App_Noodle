@@ -7,6 +7,9 @@ import Login from "./src/screens/Login";
 import Register from "./src/screens/Register";
 import Categories from "./src/screens/Categories";
 import Payment from "./src/screens/Payment";
+import Credit from "./src/screens/Credit";
+import add_Card from "./src/screens/add_Card";
+import save_Card from "./src/screens/save_Card";
 const Stack = createNativeStackNavigator();
 export default function App() {
   return (
@@ -20,6 +23,9 @@ export default function App() {
         <Stack.Screen component={Register} name="Register" />
         <Stack.Screen component={Categories} name="Categories" />
         <Stack.Screen component={Payment} name="Payment" />
+        <Stack.Screen component={Credit} name="Credit" />
+        <Stack.Screen component={add_Card} name="add_Card" />
+        <Stack.Screen component={save_Card} name="save_Card" />
       </Stack.Navigator>
     </NavigationContainer>
   );

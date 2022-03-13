@@ -18,7 +18,7 @@ const Payment = ({ navigation }) => {
       <View style={styles.payment}>
         <TouchableOpacity onPress={() => navigation.navigate("Categories")}>
           <Image
-            style={styles.undo_icon}
+            style={styles.undo_ic}
             source={require("../../images/undo_ic.png")}
           />
         </TouchableOpacity>
@@ -27,7 +27,7 @@ const Payment = ({ navigation }) => {
 
       <View style={styles.line}></View>
 
-      <TouchableOpacity onPress={() => navigation.navigate("")}>
+      <TouchableOpacity onPress={() => navigation.navigate("Credit")}>
         <View style={styles.card}>
           <Image
             style={styles.card_ic}
