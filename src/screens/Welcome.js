@@ -13,7 +13,7 @@ import {
 } from "react-native";
 import Login from "./Login";
 
-const Welcome = ({ navigation }) => {
+const Welcome = () => {
   const [isflast, setFlast] = useState(true);
 
   useEffect(() => {

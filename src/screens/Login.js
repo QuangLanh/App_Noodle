@@ -12,7 +12,8 @@ import {
   Button,
 } from "react-native";
 
-const Login = ({ navigation }) => {
+const Login = () => {
+  const navigation = useNavigation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   return (
